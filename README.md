@@ -21,3 +21,5 @@ with:
   who-to-greet: 'Evelyn Hugo'
 ```
 
+This action was created to GitHub documentation examples!
+[Create Javascript Action](https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action)
