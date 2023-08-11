@@ -1,0 +1,21 @@
+name: 'Basic workflow'
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: AleksandraAleksandrova/hello-world-javascript-action@main
+        with:
+          who-to-greet: 'Olivia Hudson'
+
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
